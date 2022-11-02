@@ -4,7 +4,7 @@ import { ActionType } from '~lib/types/output';
 
 interface ExtractedValueType {
   trackMap: {
-    [key: string]: ActionType;
+    [key: string]: ActionType[];
   };
   dialogueDuration: number;
 }

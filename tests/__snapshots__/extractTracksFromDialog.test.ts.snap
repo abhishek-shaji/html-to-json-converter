@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`extractTracksFromDialog It should extract dialog and action data fom dialog element that contains multiple actions 1`] = `
+{
+  "dialogueDuration": 3150,
+  "trackMap": {
+    "AN": [
+      {
+        "actionId": "AN_Wave",
+        "actionType": "AN",
+        "target": "CH_genius",
+        "timestamp": 2310,
+      },
+    ],
+    "DI": [
+      {
+        "dialog": "Test Dialog with actions testtestTest dialog?",
+        "duration": 3150,
+        "timestamp": 0,
+      },
+    ],
+    "EM": [
+      {
+        "actionId": "EM_Laughing",
+        "actionType": "EM",
+        "target": "CH_genius",
+        "timestamp": 1750,
+      },
+      {
+        "actionId": "EM_Laughing",
+        "actionType": "EM",
+        "target": "CH_lucy",
+        "timestamp": 2030,
+      },
+    ],
+  },
+}
+`;
+
+exports[`extractTracksFromDialog It should properly calculate timestamp when a dialog element with emotion and animation is passed 1`] = `
+{
+  "dialogueDuration": 3150,
+  "trackMap": {
+    "AN": [
+      {
+        "actionId": "AN_Wave",
+        "actionType": "AN",
+        "target": "CH_genius",
+        "timestamp": 2310,
+      },
+    ],
+    "DI": [
+      {
+        "dialog": "Test Dialog with actions testtestTest dialog?",
+        "duration": 3150,
+        "timestamp": 0,
+      },
+    ],
+    "EM": [
+      {
+        "actionId": "EM_Laughing",
+        "actionType": "EM",
+        "target": "CH_genius",
+        "timestamp": 1750,
+      },
+      {
+        "actionId": "EM_Laughing",
+        "actionType": "EM",
+        "target": "CH_lucy",
+        "timestamp": 2030,
+      },
+    ],
+  },
+}
+`;
+
+exports[`extractTracksFromDialog It should properly calculate timestamp when a dialog element with emotion and animation is passed with offset 1`] = `
+{
+  "dialogueDuration": 3150,
+  "trackMap": {
+    "AN": [
+      {
+        "actionId": "AN_Wave",
+        "actionType": "AN",
+        "target": "CH_genius",
+        "timestamp": 3310,
+      },
+    ],
+    "DI": [
+      {
+        "dialog": "Test Dialog with actions testtestTest dialog?",
+        "duration": 3150,
+        "timestamp": 1000,
+      },
+    ],
+    "EM": [
+      {
+        "actionId": "EM_Laughing",
+        "actionType": "EM",
+        "target": "CH_genius",
+        "timestamp": 2750,
+      },
+      {
+        "actionId": "EM_Laughing",
+        "actionType": "EM",
+        "target": "CH_lucy",
+        "timestamp": 3030,
+      },
+    ],
+  },
+}
+`;
+
+exports[`extractTracksFromDialog It should properly extract dialog data fom dialog element that contains no actions 1`] = `
+{
+  "dialogueDuration": 770,
+  "trackMap": {
+    "DI": [
+      {
+        "dialog": "Test Dialog",
+        "duration": 770,
+        "timestamp": 0,
+      },
+    ],
+  },
+}
+`;
