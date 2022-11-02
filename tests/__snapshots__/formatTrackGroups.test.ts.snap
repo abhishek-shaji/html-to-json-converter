@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`formatTrackGroups should properly transform track group data to the desired output format 1`] = `
+{
+  "trackGroups": [
+    {
+      "target": "CH_medusa",
+      "tracks": [
+        {
+          "actions": [
+            {
+              "actionId": "EM_Laughing",
+              "actionType": "EM",
+              "target": "CH_genius",
+              "timestamp": 700,
+            },
+            {
+              "actionId": "EM_Laughing",
+              "actionType": "EM",
+              "target": "CH_lucy",
+              "timestamp": 700,
+            },
+          ],
+          "type": "EM",
+        },
+        {
+          "actions": [
+            {
+              "dialog": "Every day I asked the cards when my baby was coming back. Isn’t that right, Lysi?",
+              "duration": 5670,
+              "timestamp": 0,
+            },
+          ],
+          "type": "DI",
+        },
+      ],
+    },
+    {
+      "target": "CH_lucy",
+      "tracks": [
+        {
+          "actions": [
+            {
+              "dialog": "Yes, Mama.",
+              "duration": 700,
+              "timestamp": 5670,
+            },
+          ],
+          "type": "DI",
+        },
+      ],
+    },
+    {
+      "target": "CH_genius",
+      "tracks": [
+        {
+          "actions": [
+            {
+              "dialog": "Can’t breathe...",
+              "duration": 1120,
+              "timestamp": 6370,
+            },
+          ],
+          "type": "DI",
+        },
+      ],
+    },
+  ],
+}
+`;
+
+exports[`formatTrackGroups should properly transform track group data to the output format 1`] = `
+{
+  "trackGroups": [
+    {
+      "target": "CH_medusa",
+      "tracks": [
+        {
+          "actions": [
+            {
+              "actionId": "EM_Laughing",
+              "actionType": "EM",
+              "target": "CH_genius",
+              "timestamp": 700,
+            },
+            {
+              "actionId": "EM_Laughing",
+              "actionType": "EM",
+              "target": "CH_lucy",
+              "timestamp": 700,
+            },
+          ],
+          "type": "EM",
+        },
+        {
+          "actions": [
+            {
+              "dialog": "Every day I asked the cards when my baby was coming back. Isn’t that right, Lysi?",
+              "duration": 5670,
+              "timestamp": 0,
+            },
+          ],
+          "type": "DI",
+        },
+      ],
+    },
+    {
+      "target": "CH_lucy",
+      "tracks": [
+        {
+          "actions": [
+            {
+              "dialog": "Yes, Mama.",
+              "duration": 700,
+              "timestamp": 5670,
+            },
+          ],
+          "type": "DI",
+        },
+      ],
+    },
+    {
+      "target": "CH_genius",
+      "tracks": [
+        {
+          "actions": [
+            {
+              "dialog": "Can’t breathe...",
+              "duration": 1120,
+              "timestamp": 6370,
+            },
+          ],
+          "type": "DI",
+        },
+      ],
+    },
+  ],
+}
+`;

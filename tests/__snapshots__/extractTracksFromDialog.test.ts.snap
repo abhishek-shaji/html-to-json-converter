@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`extractTracksFromDialog It should extract dialog and action data fom dialog element that contains multiple actions 1`] = `
+exports[`extractTracksFromDialog should extract dialog and action data fom dialog element that contains multiple actions 1`] = `
 {
   "dialogueDuration": 3150,
   "trackMap": {
@@ -37,7 +37,7 @@ exports[`extractTracksFromDialog It should extract dialog and action data fom di
 }
 `;
 
-exports[`extractTracksFromDialog It should properly calculate timestamp when a dialog element with emotion and animation is passed 1`] = `
+exports[`extractTracksFromDialog should properly calculate timestamp when a dialog element with emotion and animation is passed 1`] = `
 {
   "dialogueDuration": 3150,
   "trackMap": {
@@ -74,7 +74,7 @@ exports[`extractTracksFromDialog It should properly calculate timestamp when a d
 }
 `;
 
-exports[`extractTracksFromDialog It should properly calculate timestamp when a dialog element with emotion and animation is passed with offset 1`] = `
+exports[`extractTracksFromDialog should properly calculate timestamp when a dialog element with emotion and animation is passed with offset 1`] = `
 {
   "dialogueDuration": 3150,
   "trackMap": {
@@ -111,7 +111,7 @@ exports[`extractTracksFromDialog It should properly calculate timestamp when a d
 }
 `;
 
-exports[`extractTracksFromDialog It should properly extract dialog data fom dialog element that contains no actions 1`] = `
+exports[`extractTracksFromDialog should properly extract dialog data fom dialog element that contains no actions 1`] = `
 {
   "dialogueDuration": 770,
   "trackMap": {

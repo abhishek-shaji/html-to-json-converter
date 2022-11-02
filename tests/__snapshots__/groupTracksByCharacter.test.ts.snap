@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`groupTracksByCharacter should properly group dialog and action data by character name 1`] = `
+{
+  "lucy": {
+    "DI": [
+      {
+        "dialog": "Lorem ipsum dolor sit ame",
+        "duration": 1750,
+        "timestamp": 0,
+      },
+    ],
+  },
+  "tim": {
+    "DI": [
+      {
+        "dialog": "nisi ut aliquip ex ea",
+        "duration": 1470,
+        "timestamp": 1750,
+      },
+    ],
+  },
+}
+`;

@@ -66,66 +66,58 @@ This example shows a brief conversion between two characters named `CH_genius` a
       "target": "CH_genius",
       "tracks": [
         {
-          "type": "DI",
+          "type": "AN",
           "actions": [
-             {
-                 "dialog": "lorem ipsum",
-                 "timestamp": 0,
-                 "duration": 770
-             },
-             {
-                 "dialog": "amet",
-                 "timestamp": 1470,
-                 "duration": 280
-             }
+            {
+              "actionId": "AN_Wave",
+              "actionType": "AN",
+              "timestamp": 420,
+              "target": "CH_genius"
+            }
           ]
         },
         {
-           "type": "AN",
-           "actions": [
-               {
-                   "actionId": "AN_Wave",
-                   "actionType": "AN",
-                   "timestamp": 420,
-                   "target": "CH_genius"
-               }
-           ]
-        },
-        {
-          "type": "EM",
+          "type": "DI",
           "actions": [
-             {
-                 "actionId": "EM_Laughing",
-                 "actionType": "EM",
-                 "timestamp": 980,
-                 "target": "CH_genius"
-             }
+            {
+              "dialog": "lorem ipsum",
+              "duration": 770,
+              "timestamp": 0
+            },
+            {
+              "dialog": "amet",
+              "duration": 280,
+              "timestamp": 1400
+            }
           ]
         }
       ]
     },
     {
-       "target": "CH_evil",
-       "tracks": [
-           {
-               "type": "DI",
-               "actions": [
-                   {
-                       "dialog": "dolor sit",
-                       "timestamp": 770,
-                       "duration": 700
-                   }
-               ]
-           },
-           {
-               "type": "AN",
-               "actions": []
-           },
-           {
-               "type": "EM",
-               "actions": []
-           }
-       ]
+      "target": "CH_evil",
+      "tracks": [
+        {
+          "type": "EM",
+          "actions": [
+            {
+              "actionId": "EM_Laughing",
+              "actionType": "EM",
+              "timestamp": 980,
+              "target": "CH_genius"
+            }
+          ]
+        },
+        {
+          "type": "DI",
+          "actions": [
+            {
+              "dialog": "dolor sit",
+              "duration": 630,
+              "timestamp": 770
+            }
+          ]
+        }
+      ]
     }
   ]
 }
