@@ -1,11 +1,19 @@
 import { TIME_BETWEEN_CHAR_MS } from '../constants/duration';
 import { TRACK_TYPE_DIALOGUE } from '../constants/trackTypes';
+import { ActionType } from '~lib/types/output';
+
+interface ExtractedValueType {
+  trackMap: {
+    [key: string]: ActionType;
+  };
+  dialogueDuration: number;
+}
 
 export const extractTracksFromDialog = (
   dialog: Element,
   initialState: any,
   timestampStartAt: number
-) => {
+): ExtractedValueType => {
   const trackMap = { ...initialState };
   const children = [...dialog.children];
 

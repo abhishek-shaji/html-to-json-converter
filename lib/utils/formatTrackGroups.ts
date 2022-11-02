@@ -1,5 +1,7 @@
-const formatTracks = (trackMap) =>
-  Object.keys(trackMap).reduce((accum, type) => {
+import { OutputType, TrackType } from '../types/output';
+
+const formatTracks = (trackMap): TrackType[] =>
+  Object.keys(trackMap).reduce((accum: TrackType[], type): TrackType[] => {
     return [
       ...accum,
       {
@@ -9,9 +11,9 @@ const formatTracks = (trackMap) =>
     ];
   }, []);
 
-export const formatTrackGroups = (trackGroupData) =>
+export const formatTrackGroups = (trackGroupData): OutputType =>
   Object.keys(trackGroupData).reduce(
-    (accum, target) => {
+    (accum: OutputType, target): OutputType => {
       return {
         trackGroups: [
           ...accum.trackGroups,
