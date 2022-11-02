@@ -1,0 +1,61 @@
+{
+  "trackGroups": [
+    {
+      "target": "CH_genius",
+      "tracks": [
+        {
+          "type": "AN",
+          "actions": [
+            {
+              "actionId": "AN_Wave",
+              "actionType": "AN",
+              "timestamp": 420,
+              "target": "CH_genius"
+            }
+          ]
+        },
+        {
+          "type": "DI",
+          "actions": [
+            {
+              "dialog": "lorem ipsum",
+              "duration": 770,
+              "timestamp": 0
+            },
+            {
+              "dialog": "amet",
+              "duration": 280,
+              "timestamp": 1400
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "target": "CH_evil",
+      "tracks": [
+        {
+          "type": "EM",
+          "actions": [
+            {
+              "actionId": "EM_Laughing",
+              "actionType": "EM",
+              "timestamp": 980,
+              "target": "CH_genius"
+            }
+          ]
+        },
+        {
+          "type": "DI",
+          "actions": [
+            {
+              "dialog": "dolor sit",
+              "duration": 630,
+              "timestamp": 770
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
